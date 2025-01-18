@@ -13,7 +13,7 @@ LEFT JOIN "brandList" as b ON g.brand_id=b.id
 WHERE s.name = "Магазин 1" AND (a.action_date BETWEEN '2023-02-10' AND '2023-05-10')
 GROUP BY brand_id ORDER BY b.name;
 
--- третье задание, я знаю, что можно короче
+-- третье задание
 SELECT g.name as good_name,
     COALESCE(SUM(
        CASE 
